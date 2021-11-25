@@ -20,20 +20,35 @@ body{
     float: left;
 }
 #member{
+    position: absolute;
+    right: 100px;
     border-width: 2px;
     border-style: solid;
-    border-color: firebrick; 
+    border-color: firebrick;
 }
+/* 點餐列表開始 */
 #order{
     position: absolute;
-    left: 100px;
+    left: 400px;
+    font-size: 25px;
+    top: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 #order ul{
+    width: 100px;
     position: absolute;
+    top: 70px;
     display: none;
+}
+#order:hover{
+    background-color: white;
 }
 #order:hover ul{
     display: block;
+}
+#order:hover ul:hover li:hover{
+    background-color: gray;
 }
 #order ul li{
     text-align: center;
@@ -42,10 +57,8 @@ body{
 #order ul li a{
     text-decoration: none;
 }
-#member{
-    position: absolute;
-    right: 100px;
-}
+/* 點餐列表結束 */
+/* 購物車開始 */
 #cart{
     position: fixed;
     background-color: LightGray;
@@ -102,6 +115,8 @@ label #cancel{
     border-radius: 100%;
     background-color:black;
 }
+/* 購物車結束 */
+/* 餐廳開始 */
 .restaurant{
     position: relative;
     left: 280px;
@@ -112,6 +127,14 @@ label #cancel{
     border-radius: 10px;
     float: left;
     margin-left: 10px;
+}
+.restaurant:hover{
+    box-sizing: border-box;
+    width: 310px;
+    height: 410px;
+    border-color: red;
+    box-shadow: 1px 0 0.4em black;
+    cursor: pointer;
 }
 .recommend_block{
     position: absolute;
@@ -126,7 +149,15 @@ label #cancel{
     line-height:50px;
     font-size: 20px;
 }
+.recommend_block:hover{
+    box-sizing: border-box;
+    width: 210px;
+    height: 50px;
+    box-shadow: 1px 0 0.4em black;
+    cursor: pointer;
+}
 .title{
+    padding-top: 5px;
     font-size: 20px;
     text-align: center;
 }
@@ -153,3 +184,4 @@ p{
 .star{
     width: 15px;
 }
+/* 餐廳結束 */
