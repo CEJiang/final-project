@@ -28,7 +28,7 @@ body{
 /* 點餐列表開始 */
 #order{
     position: absolute;
-    left: 400px;
+    right: 600px;
     font-size: 25px;
     top: 0;
     padding-top: 25px;
@@ -197,5 +197,13 @@ p{
         border-radius: 10px;
         float: none;
         margin-top: 10px;
+    }
+    #order{
+        position: absolute;
+        right: 200px;
+        font-size: 25px;
+        top: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 }
