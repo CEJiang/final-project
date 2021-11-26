@@ -199,7 +199,7 @@ p{
         margin-top: 10px;
     }
     #order{
-        position: fixed;
+        position: absolute;
         right: 200px;
         font-size: 25px;
         top: 0;
